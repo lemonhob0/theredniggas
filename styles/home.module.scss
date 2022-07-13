@@ -1,0 +1,9 @@
+@import './vars.scss';
+.home{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: $white_secondary;
+    font-family: $fontAr;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Noto+Naskh+Arabic&display=swap");
+
+$fontAr : "Noto Naskh Arabic", serif;
+$fontEn :"Kanit", sans-serif;
+
+// ** COLORS ** 
+
+$white_primary:#fbfbfb;
+$white_secondary:#c4c4c4;
+
+$black_primary:#111111;
+$black_secondary:#252525;
+$black_hover:#303030;
+
+$blue_primary:#3690e4;
+$blue_secondary:#0569c7;
+
+$red_primary:#fd1212;
+
+// ** stuff **
+
+$main_height: calc(100vh - 3.1em);
+
+$min_radius:.3em;
+$max_radius:10em;

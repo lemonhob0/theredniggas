@@ -1,0 +1,17 @@
+@import './vars.scss';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ width: 100%;
+ height: 100vh;
+ overflow: hidden;
+}
+main{
+  height: $main_height;
+  background:$black_primary ;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

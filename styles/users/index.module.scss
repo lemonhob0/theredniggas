@@ -1,0 +1,21 @@
+@import "../vars.scss";
+.users {
+  & > h1 {
+    text-align: center;
+    color: $white_primary;
+    padding-block: 1em;
+    font-family: $fontEn;
+    letter-spacing: 1px;
+  }
+    & > h4 {
+      width: fit-content;
+      margin-inline: auto;
+      border-top: 1px solid $white_secondary;
+      color: $white_secondary;
+      padding-block: .5em;
+      font-family: $fontAr;
+      letter-spacing: 1px;
+      direction: rtl;
+      font-weight: 200;
+    }
+}

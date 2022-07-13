@@ -1,0 +1,50 @@
+@import '../vars.scss';
+.generator {
+    text-align: center;
+    padding-bottom: 1em;
+
+    input,
+    button {
+        border: none;
+        outline: none;
+        font-family: $fontAr;
+    }
+
+    button {
+        border-radius: 0 $min_radius $min_radius 0;
+        background: $blue_primary;
+        color: $white_primary;
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: 0.2s;
+        direction: rtl;
+
+        &:hover {
+            background: $blue_secondary;
+        }
+    }
+
+    input {
+        border-radius: $min_radius 0 0 $min_radius;
+        width: 30%;
+        padding: 1em;
+        background: $black_secondary;
+        color: $white_primary;
+        letter-spacing: 1px;
+    }
+
+    p {
+        padding-block: 1em;
+        font-family: $fontAr;
+        letter-spacing: 1px;
+        direction: rtl;
+
+        &.wrong {
+            color: $red_primary;
+        }
+
+        &.right {
+            color: $white_secondary;
+        }
+    }
+}

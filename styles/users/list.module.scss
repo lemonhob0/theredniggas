@@ -1,0 +1,107 @@
+@import "../vars.scss";
+
+.users_list {
+  width: 70%;
+  margin-inline: auto;
+  text-align: right;
+  padding-bottom: 1em;
+
+  .refresh,
+  .display_more {
+    border: none;
+    outline: none;
+    font-family: $fontAr;
+    border-radius: $min_radius;
+    transition: 0.2s;
+  }
+}
+
+.refresh {
+  padding: 1em 2em;
+  color: $white_primary;
+  background: $blue_primary;
+  cursor: pointer;
+
+  &:hover {
+    background: $blue_secondary;
+  }
+
+  &.cant_refresh {
+    background: $black_secondary;
+    cursor: not-allowed;
+
+    &:hover {
+      background: $black_hover;
+    }
+  }
+}
+
+.list {
+  text-align: left;
+  padding-bottom: 1em;
+  list-style: none;
+
+  li {
+    color: $white_primary;
+    font-family: $fontEn;
+    padding: 1em 0;
+    border-bottom: 1px solid $black_secondary;
+    display: flex;
+    align-items: center;
+    p{
+        padding-left: 1em;
+    }
+    .btns {
+      margin-left: auto;
+
+      button {
+        padding: 1em 2em;
+        margin-left: 1em;
+        outline: none;
+        border: none;
+        color: $white_primary;
+        background: none;
+        border-radius: $max_radius;
+        font-family: $fontAr;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &.delete {
+          border: 1px solid $red_primary;
+
+          &:hover {
+            background: $red_primary;
+          }
+        }
+
+        &.copy {
+            direction: rtl;
+          &.copied{
+            background: $blue_primary;
+            padding-inline: 3em;
+            &:hover{
+                background: $blue_secondary;
+            }
+          }
+          &:hover {
+            background: $black_secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.display_more {
+  width: 100%;
+  padding: 1em;
+  cursor: pointer;
+  background: $black_secondary;
+  color: $white_primary;
+
+  &:hover {
+    background: $black_hover;
+  }
+}
