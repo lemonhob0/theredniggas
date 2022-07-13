@@ -4,7 +4,7 @@ import Layout from "components/layout";
 import NextNProgress from "nextjs-progressbar";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 const client = new ApolloClient({
-  uri: "http://localhost:4000/",
+  uri: "https://theredniggas.herokuapp.com/",
   cache: new InMemoryCache(),
 });
 function MyApp({ Component, pageProps }: AppProps) {
